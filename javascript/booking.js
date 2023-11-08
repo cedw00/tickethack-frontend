@@ -1,6 +1,10 @@
+let turn = 0;
+
 fetch('https://tickethack-backend-eight-nu.vercel.app/booking').then(response => response.json())
 .then(data => {
     if (data.booked) {
+        turn === 0 ? document.querySelector('#no-booking').remove() : turn = 1;
+		turn++;
         for (let i = 0; i < data.booked.length; i++) {
             document.querySelector('#booked').innerHTML += `
             <div class="booked-trip" style="background-color: lightgrey; display:flex; justify-content: space-between; width: 100%">

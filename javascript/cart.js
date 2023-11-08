@@ -1,10 +1,13 @@
 let total = 0;
+let turn = 0;
 
 function displayCart() {
 	fetch('https://tickethack-backend-eight-nu.vercel.app/cart')
 	.then(response => response.json())
 	.then(data => {
 		if (data.booked) {
+			turn === 0 ? document.querySelector('#empty-cart').remove() : turn = 1;
+			turn++;
 			for (let i = 0; i < data.booked.length; i++) {
 				total += data.booked[i].price;
 				document.querySelector('#booked').innerHTML += `
