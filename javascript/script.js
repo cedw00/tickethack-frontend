@@ -36,6 +36,7 @@ document.querySelector('#search-trips').addEventListener('click', function () {
 			}
 		} else {
 			document.querySelector('#train').src = "./images/notfound.png";
+			document.querySelector('#train-text').textContent = "No trip found";
 		}})
 		.then(allTrips => {
 			for (let i = 0; i < document.querySelectorAll('.book-trip').length; i++) {
