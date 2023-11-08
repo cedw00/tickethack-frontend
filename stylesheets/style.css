@@ -137,7 +137,7 @@ img {
     background-color: white;
     margin-left: 60px;
     border-radius: 10px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #base-img {
