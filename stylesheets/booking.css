@@ -69,7 +69,14 @@ header {
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 2px solid gray;
-    overflow-y: scroll;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#no-booked {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #footer-text {

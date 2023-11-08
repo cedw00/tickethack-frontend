@@ -68,7 +68,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: scroll;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#empty-cart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #cart-footer {
