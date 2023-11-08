@@ -14,7 +14,7 @@ function displayCart() {
 						${new Date(data.booked[i].date).getHours() - 1}:${new Date(data.booked[i].date).getMinutes()} 
 						${data.booked[i].price}€
 					</p>
-					<button class="delete" style="text-align:center; background-color:darkcyan">X</button>
+					<button class="delete" style="text-align:center; background-color:rgba(14, 157, 107, 0.76)">X</button>
 				</div>
 			`;
 			}

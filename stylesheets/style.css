@@ -102,6 +102,7 @@ img {
     width: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 #search-date {
@@ -110,14 +111,20 @@ img {
     background-color: white;
 }
 
+#dateInput {
+    display: flex;
+}
+
 #search-trips {
     width: 80%;
     height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
     background-color: rgba(14, 157, 107, 0.76);
     border-radius: 5px;
-    box-shadow: none;
     font-weight: bold;
 }
 

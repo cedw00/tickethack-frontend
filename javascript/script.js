@@ -26,7 +26,7 @@ document.querySelector('#search-trips').addEventListener('click', function () {
 						${new Date(data.trips[i].date).getHours() - 1}:${new Date(data.trips[i].date).getMinutes()} 
 						${data.trips[i].price}€
 					</p>
-					<button class="book-trip" style="text-align:center; background-color:darkcyan">Book</button>
+					<button class="book-trip" style="text-align:center; background-color:rgba(14, 157, 107, 0.76)">Book</button>
 				</div>
 				`
 				}
