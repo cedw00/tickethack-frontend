@@ -35,7 +35,6 @@ document.querySelector('#search-trips').addEventListener('click', function () {
 				document.querySelectorAll('input')[i].value = '';
 			}
 		} else {
-			console.log(document.querySelector('#train'))
 			document.querySelector('#train').src = "./images/notfound.png";
 		}})
 		.then(allTrips => {
