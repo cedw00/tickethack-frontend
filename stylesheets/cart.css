@@ -12,13 +12,18 @@ header {
 }
 
 #home-redirect {
-    color: darkturquoise;
+    color: rgb(15, 186, 126);;
     font-weight: bold;
+    margin-left: 20px;
+}
+
+#actions {
+    display: flex;
+    justify-content: space-around;
 }
 
 #cart-redirect {
     display: flex;
-    justify-content: space-around;
 }
 
 #cart-link {
@@ -28,7 +33,8 @@ header {
 
 #booking-redirect {
     display: flex;
-    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #booking-link {
