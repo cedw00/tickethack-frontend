@@ -6,7 +6,7 @@ function displayCart() {
 	.then(response => response.json())
 	.then(data => {
 		if (data.booked) {
-			document.querySelector('#cart-footer').computedStyleMap.display = "flex";
+			document.querySelector('#cart-footer').style.display = "flex";
 			turn === 0 ? document.querySelector('#empty-cart').remove() : turn = 1;
 			turn++;
 			for (let i = 0; i < data.booked.length; i++) {
