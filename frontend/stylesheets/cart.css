@@ -1,0 +1,81 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#home-redirect {
+    color: darkturquoise;
+    font-weight: bold;
+}
+
+#cart-redirect {
+    display: flex;
+    justify-content: space-around;
+}
+
+#cart-link {
+    color: black;
+    font-weight: bold;
+}
+
+#booking-redirect {
+    display: flex;
+    justify-content: space-around;
+}
+
+#booking-link {
+    color: black;
+    font-weight: bold;
+}
+
+#cart-main-container {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+
+#cart-infos {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#booked {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+#cart-footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: darkblue;
+    color: white;
+}
+
+#purshase-btn {
+    text-align: center;
+    color: white;
+    background-color: darkcyan;
+}
