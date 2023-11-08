@@ -3,7 +3,7 @@ let turn = 0;
 fetch('https://tickethack-backend-eight-nu.vercel.app/booking').then(response => response.json())
 .then(data => {
     if (data.booked) {
-        turn === 0 ? document.querySelector('#no-booking').remove() : turn = 1;
+        turn === 0 ? document.querySelector('#no-booked').remove() : turn = 1;
 		turn++;
         for (let i = 0; i < data.booked.length; i++) {
             document.querySelector('#booked').innerHTML += `
