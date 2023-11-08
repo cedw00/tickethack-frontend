@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/booking').then(response => response.json())
+fetch('https://tickethack-backend-eight-nu.vercel.app/booking').then(response => response.json())
 .then(data => {
     if (data.booked) {
         for (let i = 0; i < data.booked.length; i++) {

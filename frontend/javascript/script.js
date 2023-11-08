@@ -6,7 +6,7 @@ document.querySelector('#search-trips').addEventListener('click', function () {
     const date = document.querySelector('#dateInput').value;
 	let trips = [];
 
-	fetch('http://localhost:3000/', {
+	fetch('https://tickethack-backend-eight-nu.vercel.app/', {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({ departure: departure, arrival: arrival, date: date }),
@@ -40,7 +40,7 @@ document.querySelector('#search-trips').addEventListener('click', function () {
 		.then(allTrips => {
 			for (let i = 0; i < document.querySelectorAll('.book-trip').length; i++) {
 				document.querySelectorAll('.book-trip')[i].addEventListener('click', function () {
-					fetch('http://localhost:3000/cart', {
+					fetch('https://tickethack-backend-eight-nu.vercel.app/cart', {
 						method: 'POST',
 						headers: { 'Content-Type': 'application/json' },
 						body: JSON.stringify({ departure: trips[i].departure, arrival: trips[i].arrival, date: trips[i].date, price: trips[i].price}),

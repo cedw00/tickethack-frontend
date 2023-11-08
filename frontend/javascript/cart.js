@@ -1,7 +1,7 @@
 let total = 0;
 
 function displayCart() {
-	fetch('http://localhost:3000/cart')
+	fetch('https://tickethack-backend-eight-nu.vercel.app/cart')
 	.then(response => response.json())
 	.then(data => {
 		if (data.booked) {
@@ -27,10 +27,10 @@ function displayCart() {
 function deleteCartTrip() {
 	for (let i = 0; i < document.querySelectorAll('.delete').length; i++) {
 		document.querySelectorAll('.delete')[i].addEventListener('click', async function () {
-            await fetch('http://localhost:3000/cart').then(response => response.json()).then(data => {
+            await fetch('https://tickethack-backend-eight-nu.vercel.app/cart').then(response => response.json()).then(data => {
                 if (data.booked.length !== 0) {
 					total -= data.booked[i].price;
-                    fetch(`http://localhost:3000/cart/`, {
+                    fetch(`https://tickethack-backend-eight-nu.vercel.app/cart/`, {
                         method: 'DELETE',
                         headers: { 'Content-Type': 'application/json' },
 		                body: JSON.stringify({
