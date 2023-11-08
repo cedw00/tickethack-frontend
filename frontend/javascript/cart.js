@@ -20,11 +20,11 @@ function displayCart() {
 			}
 		}
 		document.querySelector('#total').textContent = total;
-		deleteBookedTrip();
+		deleteCartTrip();
 	})
 }
 
-function deleteBookedTrip() {
+function deleteCartTrip() {
 	for (let i = 0; i < document.querySelectorAll('.delete').length; i++) {
 		document.querySelectorAll('.delete')[i].addEventListener('click', async function () {
             await fetch('http://localhost:3000/cart').then(response => response.json()).then(data => {
